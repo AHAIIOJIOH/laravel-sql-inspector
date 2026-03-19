@@ -1,0 +1,52 @@
+{
+    "name": "ahaiiojioh/laravel-sql-inspector",
+    "description": "Runtime SQL diagnostics for Laravel applications.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "sql",
+        "diagnostics",
+        "profiling",
+        "database"
+    ],
+    "authors": [
+        {
+            "name": "ahaiiojioh"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/console": "^11.0",
+        "illuminate/database": "^11.0",
+        "illuminate/http": "^11.0",
+        "illuminate/log": "^11.0",
+        "illuminate/support": "^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ahaiiojioh\\LaravelSqlInspector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ahaiiojioh\\LaravelSqlInspector\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ahaiiojioh\\LaravelSqlInspector\\SqlInspectorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "phpunit"
+    }
+}
